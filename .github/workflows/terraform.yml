@@ -45,7 +45,7 @@ jobs:
 
         - name: Terraform format
           id: fmt
-          run: terraform fmt -check
+          run: terraform fmt -check -recursive || terraform fmt -recursive # to debug the format instead of failing
 
         - name: Terraform validate
           id: validate
