@@ -1,3 +1,6 @@
 .terraform*
 DS_Store
 .history
+.terraform
+*.tfstate
+*.lock*
